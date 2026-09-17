@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação</title>
+</head>
+
+<body>
+
+    ```
+    <header>
+        <h1>Avalie meus jogos favoritos</h1>
+
+        <p>
+            Escolha um dos jogos da lista, dê sua nota e conte
+            um pouco sobre sua opinião.
+        </p>
+    </header>
+
+    <hr>
+
+    <nav>
+        <h2>Menu de navegação</h2>
+
+        <a href="main.html">Início</a> |
+        <a href="puss.html">PUSS!</a> |
+        <a href="faith.html">FAITH</a> |
+        <a href="baba.html">Baba Is You</a> |
+        <a href="celeste.html">Celeste</a> |
+        <a href="pizza.html">Pizza Tower</a> |
+        <a href="fez.html">FEZ</a> |
+        <a href="obra.html">Obra Dinn</a> |
+        <a href="neon.html">Neon White</a> |
+        <a href="mew.html">Mewgenics!</a> |
+        <a href="ins.html">Inscryption</a> |
+        <a href="avaliacao.html">Avaliação</a>
+    </nav>
+
+    <hr>
+
+    <main>
+
+        <section>
+
+            <h2>Formulário de avaliação</h2>
+
+            <form>
+
+                <article>
+
+                    <h3>Informações</h3>
+
+                    <label for="nome">Seu nome:</label>
+                    <br>
+
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                    <br><br>
+
+                    <label for="data">Data da avaliação:</label>
+                    <br>
+
+                    <input type="date" id="data" name="data" required>
+
+                </article>
+
+                <hr>
+
+                <article>
+
+                    <h3>Jogo favorito</h3>
+
+                    <label for="jogo">
+                        Qual desses jogos você mais gosta?
+                    </label>
+                    <br>
+
+                    <input type="text" id="jogo" name="jogo" list="jogos" placeholder="Escolha ou digite um jogo"
+                        required>
+
+                    <datalist id="jogos">
+
+                        <option value="PUSS!">
+                        <option value="FAITH">
+                        <option value="Baba Is You">
+                        <option value="Celeste">
+                        <option value="Pizza Tower">
+                        <option value="FEZ">
+                        <option value="Return of the Obra Dinn">
+                        <option value="Neon White">
+                        <option value="Mewgenics">
+                        <option value="Inscryption">
+
+                    </datalist>
+
+                </article>
+
+                <hr>
+
+                <article>
+
+                    <h3>Avaliação</h3>
+
+                    <label for="nota">
+                        De 0 a 10, qual nota você daria para esse jogo?
+                    </label>
+                    <br>
+
+                    <input type="range" id="nota" name="nota" min="0" max="10" value="5">
+
+                    <br><br>
+
+                    <label for="cor">
+                        Escolha uma cor que represente esse jogo:
+                    </label>
+                    <br>
+
+                    <input type="color" id="cor" name="cor">
+
+                    <br><br>
+
+                    <label for="opiniao">
+                        Conte sua opinião:
+                    </label>
+                    <br>
+
+                    <textarea id="opiniao" name="opiniao" rows="6" cols="50"
+                        placeholder="Escreva o que você achou do jogo..."></textarea>
+
+                </article>
+
+                <hr>
+
+                <article>
+
+                    <h3>Imagem</h3>
+
+                    <label for="arquivo">
+                        Envie uma imagem relacionada ao seu jogo favorito:
+                    </label>
+                    <br>
+
+                    <input type="file" id="arquivo" name="arquivo">
+
+                </article>
+
+                <hr>
+
+                <article>
+
+                    <h3>Algumas informações</h3>
+
+                    <details>
+
+                        <summary>
+                            Como funciona essa avaliação?
+                        </summary>
+
+                        <p>
+                            Escolha um dos jogos da lista, dê uma nota
+                            de 0 a 10 e escreva sua opinião sobre ele.
+                            Você também pode escolher uma cor e enviar
+                            uma imagem relacionada ao jogo.
+                        </p>
+
+                    </details>
+
+                    <br>
+
+                    <p>
+                        Alguns jogos da lista possuem uma
+                        <mark>grande dificuldade</mark>,
+                        então a nota pode levar isso em consideração.
+                    </p>
+
+                    <p>
+                        Dificuldade aproximada:
+                        <meter min="0" max="10" value="8">
+                            8 de 10
+                        </meter>
+                    </p>
+
+                    <p>
+                        Avaliações recebidas:
+                        <progress value="70" max="100">
+                            70%
+                        </progress>
+                    </p>
+
+                </article>
+
+                <hr>
+
+                <input type="submit" value="Enviar avaliação">
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>
+            <i><strong>Projeto de HTML</strong></i>
+        </p>
+        <p><i>Desenvolvido por Caetano Pequeno</i></p>
+        <p><i>2026</i></p>
+    </footer>
+
+</body>
+
+</html>
